@@ -12,7 +12,11 @@ if (strlen($usuario) == 0 || strlen($contrasena) == 0) {
 
 // Validar en la base de datos.
 
-$mysqli = new mysqli("localhost", "root", "", "adsi");
+$host_bd = "localhost";
+$usuario_bd = "root";
+$contrasena_bd = "";
+
+$mysqli = new mysqli($host_bd, $usuario_bd, $contrasena_bd, "adsi");
 $consulta  = "select count(1) cantidad from usuarios where usuario = '" . $usuario . "' and clave = '" . $contrasena . "'";
 $loginCorrecto = false;
 
