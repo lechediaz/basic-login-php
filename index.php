@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <form method="POST" action="validar_usuario.php">
+    <form class="bloque-basico" method="POST" action="validar_usuario.php">
         <h2>Ingreso al sistema</h2>
-        <input name="usuario" placeholder="Usuario" required type="tex" />
-        <input name="contrasena" placeholder="Contraseña" required type="password" />
+        <input name="usuario" placeholder="Usuario" required title="Usuario" type="tex" />
+        <input name="contrasena" placeholder="Contraseña" required title="Contraseña" type="password" />
         <input type="submit" value="Ingresar">
     </form>
 </body>

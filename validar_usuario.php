@@ -33,16 +33,22 @@ if ($resultado = $mysqli->query($consulta)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title><?php echo $loginCorrecto ? 'Bienvenida' : 'Error' ?></title>
 </head>
 
 <body>
-    <?php if ($loginCorrecto) : ?>
-        <h1>Bienvenido: <?php echo $usuario ?></h1>
-        <p>Gracias por confiar en nosotros</p>
-    <?php else : ?>
-        <strong>La autenticación NO fue exitosa</strong>
-    <?php endif; ?>
+    <div class="bloque-basico">
+        <?php if ($loginCorrecto) : ?>
+            <h1>¡Hola <span class="nombre-usuario"><?php echo $usuario ?></span>!</h1>
+            <p>Gracias por confiar en nosotros</p>
+        <?php else : ?>
+            <p class="mensaje">
+                <em>La autenticación NO fue exitosa.</em>
+                <a href="index.php">Click aquí para volver</a>
+            </p>
+        <?php endif; ?>
+    </div>
 </body>
 
 </html>

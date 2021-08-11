@@ -1,41 +1,67 @@
-html, body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    margin: 0px;
-    background-color: rgb(144, 230, 241);
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  background-color: rgb(60 60 60);
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 form {
-    align-self: center;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 0 auto;
-    min-width: 400px;
-    border-radius: 10px;
-    border: 1px solid rgb(61, 61, 61);
+  min-height: 200px;
+  min-width: 400px;
 }
 
 form > h2 {
-    margin: 0px 0px 20px;
+  margin: 0px 0px 20px;
+  text-align: center;
 }
 
 input {
-    margin-bottom: 10px;
-    min-height: 30px;
+  margin-bottom: 10px;
+  min-height: 30px;
+  padding: 0px 6px;
 }
 
 input:last-of-type {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
-input[type=submit] {
-    background-color: rgb(48, 92, 133);
-    color: white;
+input[type="submit"] {
+  align-self: flex-end;
+  background-color: rgb(64 64 64);
+  border: 1px solid #b5b5b5;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-top: auto;
+  padding: 10px;
+}
+
+.bloque-basico {
+  align-self: center;
+  background-color: #c52f59;
+  border-radius: 10px;
+  border: 1px solid rgb(181 181 181);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+p.mensaje > a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+span.nombre-usuario {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
 }
